@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'">
+  <title>GoreBox 27 VR</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="ui.js"></script>
+</head>
+<body>
+  <header>
+    <span class="mark">GB<span>27</span></span><span class="appname">GOREBOX / VR</span>
+    <div class="window-actions">
+      <button id="minimize" aria-label="Свернуть">−</button><button id="close" aria-label="Закрыть">×</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-label="GoreBox 27">
+      <img id="scene" class="scene" src="art/scene1.jpg" alt="">
+      <div class="shade"></div><div class="texture"></div>
+      <div class="copy">
+        <p class="mode">ОДИНОЧНАЯ ПЕСОЧНИЦА</p>
+        <h1>GOREBOX<span>27</span><br><em>VR</em></h1>
+        <p class="intro">Запуск GoreBox 27 на Quest через SteamVR.</p>
+      </div>
+      <div class="gallery" aria-label="Скриншоты из Steam">
+        <button class="selected" aria-label="Скриншот 1" aria-pressed="true"><img src="art/scene1.jpg" alt=""></button>
+        <button aria-label="Скриншот 2" aria-pressed="false"><img src="art/scene2.jpg" alt=""></button>
+        <button aria-label="Скриншот 3" aria-pressed="false"><img src="art/scene3.jpg" alt=""></button>
+        <button aria-label="Скриншот 4" aria-pressed="false"><img src="art/scene4.jpg" alt=""></button>
+      </div>
+    </section>
+    <section class="panel" aria-label="Управление модом">
+      <div class="status" aria-live="polite">
+        <span id="state" class="state">Проверяю установку</span>
+        <p id="detail">GoreBox 27 · сборка 0.16.3</p>
+      </div>
+      <div class="actions">
+        <button id="install" class="primary" hidden>Установить <span aria-hidden="true">↓</span></button>
+        <button id="remove" class="secondary" hidden>Удалить</button>
+        <button id="launch" class="primary" hidden>Запустить игру <span aria-hidden="true">▶</span></button>
+        <button id="refresh" class="secondary" hidden>Проверить снова</button>
+      </div>
+    </section>
+    <footer>
+      <span class="vr-icon" aria-hidden="true">◉</span>
+      <p><strong>Подготовь SteamVR</strong><br>Подключи Quest через Steam Link и разбуди оба контроллера.</p>
+      <span class="credit">Скриншоты F²Games / Steam</span>
+    </footer>
+  </main>
+</body>
+</html>

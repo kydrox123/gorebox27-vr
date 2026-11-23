@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@electron/packager": "^20.3.0",
+    "electron": "^45.4.1"
+  },
+  "name": "gorebox-vr",
+  "version": "1.0.0",
+  "main": "main.cjs"
+}
